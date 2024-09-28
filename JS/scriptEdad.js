@@ -3,11 +3,11 @@ function verificarEdad() {
     const edad = document.getElementById('edad').value;
 
     resultado.classList.remove("mensaje-error", "mensaje-invalido", "mensaje-valido");
-    if (edad.length > 3) {
+    if (edad.length > 3 || edad > 125) {
         resultado.textContent = "La edad es mayor a la esperada";
         resultado.classList.add("mensaje-error");
     }
-    else if (edad >= 18 ) {
+    else if (edad >= 18) {
         resultado.textContent = 'Eres mayor de edad';
         resultado.classList.add("mensaje-valido");
     }
