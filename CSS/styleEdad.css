@@ -1,0 +1,9 @@
+.mensaje-invalido{
+color: red;
+}
+.mensaje-valido{
+color: green;
+}
+.mensaje-error{
+color: orange;
+}
